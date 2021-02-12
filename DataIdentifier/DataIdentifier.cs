@@ -34,14 +34,14 @@ namespace DataIdentifier
             Console.WriteLine("------------------------------");
             Console.Write("Digite o mes: ");
             mes = int.Parse(Console.ReadLine());
-            if (mes < 0 || mes > 12)
+            if (mes < 1 || mes > 12)
             {
                 do
                 {
                     Console.WriteLine("------------------------------");
                     Console.Write("Digite o mes novamente: ");
                     mes = int.Parse(Console.ReadLine());
-                } while (mes < 0 || mes > 12);
+                } while (mes < 1 || mes > 12);
             }
 
         }
@@ -103,14 +103,14 @@ namespace DataIdentifier
             Console.WriteLine("------------------------------");
             Console.Write("Digite o dia: ");
             dia = int.Parse(Console.ReadLine());
-            if (dia < 0 || dia > 31)
+            if (dia < 1 || dia > 31)
             {
                 do
                 {
                     Console.WriteLine("------------------------------");
                     Console.Write("Digite o dia novamente: ");
                     dia = int.Parse(Console.ReadLine());
-                } while (dia < 0 || dia > 31);
+                } while (dia < 1 || dia > 31);
             }
 
             VerifDia();
